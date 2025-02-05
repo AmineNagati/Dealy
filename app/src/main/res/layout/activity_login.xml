@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Logo de l'application en arrière-plan -->
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+
+        android:src="@drawable/ic_logo"
+        android:scaleType="centerCrop"
+        android:alpha="0.2" /> <!-- Transparence pour ne pas gêner la lisibilité -->
+
+    <!-- Conteneur pour les champs de saisie et les boutons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_centerInParent="true">
+
+        <!-- Champ pour l'email -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Champ pour le mot de passe -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Bouton pour se connecter -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/primary"
+            android:padding="12dp"
+            android:text="Se connecter"
+            android:textColor="@color/white"
+            android:textColorLink="@color/primary"
+            android:textSize="16sp" />
+
+        <!-- Bouton pour s'inscrire -->
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:text="S'inscrire"
+            android:textColor="@color/purple_500"
+            android:textColorLink="@color/primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Section Profil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/userInitial"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_orange_background"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0_demande_de_job"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Statut VIP -->
+        <LinearLayout
+            android:id="@+id/vipStatusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/vip_background"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Statut VIP"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_marginStart="8dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <!-- Section Gérer mon compte -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/g_rer_mon_compte"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Options de Gérer mon compte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Informations personnelles -->
+            <LinearLayout
+                android:id="@+id/personalInfoOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_person"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="Informations personnelles"/>
+            </LinearLayout>
+
+            <!-- Mon solde -->
+            <LinearLayout
+                android:id="@+id/balanceOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_wallet"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/mon_solde"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+
+
+
+
+            <!-- Attestations fiscales -->
+            <LinearLayout
+                android:id="@+id/taxCertificateOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_terms"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/attestations_fiscales"/>
+            </LinearLayout>
+
+            <!-- Gérer mes notifications -->
+            <LinearLayout
+                android:id="@+id/notificationsOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_notifications"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/g_rer_mes_notifications"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d_sactiv_es"
+                    android:background="@drawable/orange_pill_background"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section Produits -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/produits"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Options de Produits -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Crédit d'impôt -->
+            <LinearLayout
+                android:id="@+id/taxCreditOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_tax"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cr_dit_d_imp_t"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gagnez_du_temps_et_baissez_vos_imp_ts"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Inviter des amis -->
+            <LinearLayout
+                android:id="@+id/inviteFriendsOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_invite"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inviter_des_amis"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gagnez_5_du_montant_d_pens_par_vos_amis_vie"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Statut VIP -->
+            <LinearLayout
+                android:id="@+id/vipStatusOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_vip"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/statut_vip"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0_"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+
+            <!-- Cartes cadeaux -->
+            <LinearLayout
+                android:id="@+id/giftCardsOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_gift"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/cartes_cadeaux"/>
+            </LinearLayout>
+
+            <!-- Prestify Direct -->
+            <LinearLayout
+                android:id="@+id/prestifyDirectOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_direct"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/prestify_direct"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section Informations utiles -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/informations_utiles"
+            android:textColorLink="@color/primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Options d'Informations utiles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Centre d'aide -->
+            <LinearLayout
+                android:id="@+id/helpCenterOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_help"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/centre_d_aide"/>
+            </LinearLayout>
+
+            <!-- Prestify Cover -->
+            <LinearLayout
+                android:id="@+id/prestifyCoverOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_cover"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/prestify_cover"/>
+            </LinearLayout>
+
+            <!-- Confiance et sécurité -->
+            <LinearLayout
+                android:id="@+id/securityOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_security"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/confiance_et_s_curit"/>
+            </LinearLayout>
+
+            <!-- Crédit d'impôts -->
+            <LinearLayout
+                android:id="@+id/taxInfoOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_tax"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/cr_dit_d_imp_ts"/>
+            </LinearLayout>
+
+            <!-- Conditions générales -->
+            <LinearLayout
+                android:id="@+id/termsOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_terms"/>
+                <TextView
+                    style="@style/OptionText"
+                    android:text="@string/conditions_g_n_rales"/>
+            </LinearLayout>
+
+            <!-- Devenir Prestataire -->
+            <LinearLayout
+                android:id="@+id/becomeProviderOption"
+                style="@style/OptionItem">
+                <ImageView
+                    style="@style/OptionIcon"
+                    android:src="@drawable/ic_provider"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/devenir_prestataire"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avec_l_application_prestify_prestataire"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Bouton Déconnexion -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/se_d_connecter"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

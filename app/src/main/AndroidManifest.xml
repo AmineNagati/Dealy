@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PrestiFy"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Ajout de LoginActivity -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+
+        <!-- Ajout de SignupActivity -->
+        <activity
+            android:name=".activity.SignupActivity"
+            android:exported="false" />
+
+        <!-- Ajout de PaymentActivity -->
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:exported="false" />
+
+        <!-- Ajout de ServiceDetailActivity -->
+        <activity
+            android:name=".activity.ServiceDetailActivity"
+            android:exported="false" />
+        <!-- Pour l'activité de liste des catégories -->
+        <activity
+            android:name=".activity.ServiceCategoryActivity"
+            android:exported="false" />
+
+        <!-- Pour l'activité de liste des services -->
+        <activity
+            android:name=".activity.ServiceListActivity"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

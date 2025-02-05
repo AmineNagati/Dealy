@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- En-tête "Votre compte" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre compte"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Message d'inscription -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscrivez-vous pour pouvoir planifier vos futures demandes et trouver un prestataire qualifié."
+        android:textSize="14sp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!-- Bouton S'inscrire -->
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/primary"
+        android:padding="8dp"
+        android:text="S'inscrire"
+        android:textColor="@color/white" />
+
+    <!-- Lien Connexion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous avez déjà un compte ? "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connexion"
+            android:textColor="@color/primary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Ligne de séparation -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Options avec icônes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Option 1 : Devenir Prestataire -->
+        <LinearLayout
+            android:id="@+id/becomeProviderOption"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_provider"
+                android:contentDescription="@string/icon_provider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Devenir Prestataire"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Option 2 : Centre d'aide -->
+        <LinearLayout
+            android:id="@+id/helpCenterOption"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_help"
+                android:contentDescription="@string/icon_help" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Centre d'aide"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Option 3 : prstiFy Cover -->
+
+        <!-- Option 4 : Confiance et sécurité -->
+        <LinearLayout
+            android:id="@+id/securityOption"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_security"
+                android:contentDescription="@string/icon_security" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Confiance et sécurité"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Option 5 : Crédit d'impôts -->
+        <LinearLayout
+            android:id="@+id/taxCreditOption"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_tax"
+                android:contentDescription="@string/icon_tax" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Crédit d'impôts"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Option 6 : Conditions générales -->
+        <LinearLayout
+            android:id="@+id/termsOption"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_terms"
+                android:contentDescription="@string/icon_terms" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Conditions générales"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

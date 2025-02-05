@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Date de la réservation -->
+    <TextView
+        android:id="@+id/reservationDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date: 2023-10-15"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+    <!-- Heure de la réservation -->
+    <TextView
+        android:id="@+id/reservationTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Heure: 10:00 AM"
+    android:textSize="14sp"
+    android:layout_marginTop="4dp" />
+</LinearLayout>

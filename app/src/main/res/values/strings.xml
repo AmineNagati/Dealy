@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">dealy</string>
+
+        <string name="icon_provider">Icône prestataire</string>
+        <string name="icon_help">Icône aide</string>
+        <string name="icon_cover">Icône cover</string>
+        <string name="icon_security">Icône sécurité</string>
+        <string name="icon_tax">Icône crédit d\'impôts</string>
+        <string name="icon_terms">Icône conditions générales</string>
+        <string name="icon_notifications">Icône notifications</string>
+        <string name="icon_person">Icône personnes</string>
+        <string name="icon_wallet">Icône wallet</string>
+         <string name="icon_profile">Icône profile</string>
+    <string name="g_rer_mon_compte">Gérer mon compte</string>
+    <string name="mon_solde">Mon solde</string>
+    <string name="_0">0 €</string>
+    <string name="attestations_fiscales">Attestations fiscales</string>
+    <string name="d_sactiv_es">Désactivées</string>
+    <string name="g_rer_mes_notifications">Gérer mes notifications</string>
+    <string name="produits">Produits</string>
+    <string name="cr_dit_d_imp_t">Crédit d\'impôt</string>
+    <string name="gagnez_du_temps_et_baissez_vos_imp_ts">Gagnez du temps et baissez vos impôts.</string>
+    <string name="inviter_des_amis">Inviter des amis</string>
+    <string name="gagnez_5_du_montant_d_pens_par_vos_amis_vie">Gagnez 5% du montant dépensé par vos amis, à vie.</string>
+    <string name="statut_vip">Statut VIP</string>
+    <string name="_0_">0%</string>
+    <string name="cartes_cadeaux">Cartes cadeaux</string>
+    <string name="prestify_direct">dealy Direct</string>
+    <string name="informations_utiles">Informations utiles</string>
+    <string name="centre_d_aide">Centre d\'aide</string>
+    <string name="prestify_cover">dealy Cover</string>
+    <string name="avec_l_application_prestify_prestataire">Avec l\'application Prestify Prestataire</string>
+    <string name="se_d_connecter">Se déconnecter</string>
+    <string name="devenir_prestataire">Devenir Prestataire</string>
+    <string name="conditions_g_n_rales">Conditions générales</string>
+    <string name="cr_dit_d_imp_ts">Crédit d\'impôts</string>
+    <string name="confiance_et_s_curit">Confiance et sécurité</string>
+    <string name="_0_demande_de_job">0 demande de job</string>
+    <string name="messagerie">Messagerie</string>
+    <string name="en_cours">En cours</string>
+    <string name="de_quel_service_avez_vous_besoin">De quel service avez-vous besoin ?</string>
+
+</resources>
